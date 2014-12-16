@@ -1,11 +1,16 @@
 # grunt-evil-icons
 
-> Grunt plugin to use Evil Icons in your project
+This plugin allows to use [Evil Icons] in your project with Grunt.
+
+[Evil Icons]: http://evil-icons.io
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5`
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out
+the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains
+how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well
+as install and use Grunt plugins. Once you're familiar with that process,
+you may install this plugin with this command:
 
 ```shell
 npm install grunt-evil-icons --save-dev
@@ -25,65 +30,28 @@ In your project's Gruntfile, add a section named `evil_icons` to the data object
 ```js
 grunt.initConfig({
   evil_icons: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
+    dist: {
+      "build/index.html": "src/index.html"
     },
   },
 });
 ```
 
-### Options
+### Using icons
+Once you have added the `evil_icons` section to your Gruntfile, you can use
+the icons in your html with the `icon` tag:
 
-#### options.separator
-Type: `String`
-Default value: `',  '`
-
-A string value that is used to do something with whatever.
-
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
-
-### Usage Examples
-
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  evil_icons: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
+```html
+<icon name="ei-archive" />
+<icon name="ei-chart" size="s" />
+<icon name="ei-check" size="m" />
+<icon name="ei-cart" size="l" class="foo" />
 ```
 
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+The sprite will be added to your html automatically, and the `icon` tags will
+be replaced with actual SVG code.
 
-```js
-grunt.initConfig({
-  evil_icons: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
+The only thing you have to add to your code explicitly is the stylesheet:
+```html
+<link rel="stylesheet" href="../node_modules/evil-icons/assets/css/evil-icons.css">
 ```
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
-_(Nothing yet)_
