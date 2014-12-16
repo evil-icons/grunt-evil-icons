@@ -1,0 +1,43 @@
+{
+  "name": "grunt-evil-icons",
+  "description": "Grunt plugin to use Evil Icons in your project",
+  "version": "0.1.0",
+  "homepage": "https://github.com/outpunk/grunt-evil-icons",
+  "author": {
+    "name": "Alexander Madyankin",
+    "email": "alexander@madyankin.name",
+    "url": "http://twitter.com/outpunk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/outpunk/grunt-evil-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/outpunk/grunt-evil-icons/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/outpunk/grunt-evil-icons/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "evil-icons": "~1.2.0",
+    "cheerio": "~0.18.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "icons", "SVG", "grunt plugin"
+  ]
+}
