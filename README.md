@@ -55,3 +55,8 @@ The only thing you have to add to your code explicitly is the stylesheet:
 ```html
 <link rel="stylesheet" href="../node_modules/evil-icons/assets/css/evil-icons.css">
 ```
+
+
+<p align="center"><a href="https://evilmartians.com/">
+<img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg" alt="Sponsored by Evil Martians" width="236" height="54">
+</a></p>
