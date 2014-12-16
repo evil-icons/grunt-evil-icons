@@ -1,0 +1,10 @@
+.git
+.DS_Store
+npm-debug.log
+*.sublime-project
+*.sublime-workspace
+*.todo
+
+node_modules
+test
+tmp
