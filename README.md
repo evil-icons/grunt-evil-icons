@@ -36,9 +36,11 @@ In your project's Gruntfile, add a section named `evil_icons` to the data object
 grunt.initConfig({
   evil_icons: {
     dist: {
-      "build/index.html": "src/index.html"
-    },
-  },
+      files: {
+        "build/index.html": "src/index.html"
+      }
+    }
+  }
 });
 ```
 
