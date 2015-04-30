@@ -1,7 +1,7 @@
 {
   "name": "grunt-evil-icons",
   "description": "Grunt plugin to use Evil Icons in your project",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "homepage": "https://github.com/outpunk/grunt-evil-icons",
   "author": {
     "name": "Alexander Madyankin",
@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "evil-icons": "~1.7.3"
+    "evil-icons": "~1.7.4"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^0.9.2",
